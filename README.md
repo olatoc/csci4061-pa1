@@ -1,4 +1,4 @@
-#This was a project for the class CSCI 4061: Introduction to Operating Systems  
+# This was a project for the class CSCI 4061: Introduction to Operating Systems  
 # csci4061-pa1
 
                 /*
