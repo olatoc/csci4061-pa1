@@ -1,0 +1,42 @@
+mygame: main.o player.o enemy.o renderer.o vecmath.o image.o mesh.o
+	cc -o mygame main.o player.o enemy.o renderer.o vecmath.o image.o mesh.o -lGL -lglut -lpng -lz -lm
+	ls -l
+
+main.o: main.c
+	cc -c main.c
+
+player.o: player.c
+	cc -c player.c
+	rm -rf third.c
+	
+renderer.o: test/renderer.c test.o
+	gcc -c test/renderer.c
+	/bin/pwd 
+
+mesh.o: target111
+	cc -c mesh.c
+test.o:
+	/usr/bin/du -h
+	/bin/ls -l
+
+target111 : dog target112
+	echo recipe
+
+dog:
+	echo dog
+
+target112 : dog2 target113
+	echo recipe2
+
+dog2:
+	echo dog2
+
+target113 : dog333 last
+	echo recipe3
+
+dog333:
+	echo dog333
+
+last: 
+	echo LAST
+
